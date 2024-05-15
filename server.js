@@ -64,5 +64,5 @@ async function getAllCats() {
 
 app.listen(port,()=>{
 console.log("App listening to: "+port)
-//run().catch(console.dir);
+run().catch(console.dir);
 })
