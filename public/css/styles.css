@@ -1,0 +1,37 @@
+
+    .user-image-size {
+    height: 64px;
+    }
+    
+    .navbar-size {
+        width: 95%;
+        margin: 0 auto;
+        }
+        .user-image-size {
+        height: 56px;
+        margin: 4px 0;
+        }
+        .main-body {
+        background-color: #F28487;
+        color: white;
+        height: calc(100vh - 64px);
+        }
+        .materialboxed-image {
+        margin: 0 auto;
+        height: 400px;
+        }
+        .click-me-button {
+        background-color: red;
+        margin-top: 50px;
+        }
+        
+        .parallax-color {
+            background-color: darkgreen; /* Set your desired color */
+            /* Adjust the height as needed */
+            height: 300px; /* Example height; customize as desired */
+            width: 100%;
+        }
+
+        body {
+            background-color: blue;
+        }

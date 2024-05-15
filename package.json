@@ -1,0 +1,15 @@
+{
+  "name": "sit725-2024-t1-prac4",
+  "version": "1.0.0",
+  "description": "Assignment 4 Add a Database",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.6.1"
+  }
+}
