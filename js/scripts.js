@@ -63,11 +63,18 @@ function getCats() {
 
 function postCat(cat) {
     $.ajax({
-        url: 'api/cat',
+        url: '/api/cats',
         data: cat,
         type: 'POST',
         success: (result) => {
             console.log(result.data);
+            console.log('Data submitted successfully:', cat); // Log the submitted data
+            console.log('Server response:', result.data);
+            location.reload();
+        },
+        error: (xhr, status, error) => {
+            console.error('Error submitting data:', error); // Log any errors
+            // Handle the error (e.g., show an error message to the user)
         }
     });
 }
