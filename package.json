@@ -4,12 +4,16 @@
   "description": "Assignment 4 Add a Database",
   "main": "index.js",
   "scripts": {
+    "test": "mocha --reporter spec",
     "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.3.7",
     "express": "^4.19.2",
-    "mongodb": "^6.6.2"
+    "mocha": "^10.4.0",
+    "mongodb": "^6.6.2",
+    "request": "^2.88.2"
   }
 }

@@ -3,6 +3,7 @@ let router = express.Router();
 let controller = require('../controller/controller');
 
 router.post('/api/cats', async function(req, res) {
+    console.log('Coming cats',req.body);
     let result = await controller.insertCat(req,res);
     res.json({statusCode: 201, message: 'success', data: result});
 });
