@@ -1,17 +1,15 @@
-// const cardList = [
-//     {
-//         title: "Kitten 2",
-//         image: "images/kitten-2.jpg",
-//         link: "About Kitten 2",
-//         description: "Hi from Kitten 2, cuteness is of same level as Kitten 1"
-//     },
-//     {
-//         title: "Kitten 3",
-//         image: "images/kitten-3.jpg",
-//         link: "About Kitten 3",
-//         description: "Hello from Kitten 3, I am in Good Company with 1 and 2"
-//     }
-// ];
+let messageMap = {
+    0:"Have you had a glass of Water?",
+    1:"Have you meditated Today?",
+    2:"Did you go out in Park today?",
+    3:"Have you Looked Away from Monitor today?"
+}
+
+let socket = io();
+socket.on('number', (message) => {
+    console.log('random number: ' + message);
+    alert(messageMap[message]);
+});
 
 const addCards = (items) => {
     items.forEach(item => {
@@ -26,17 +24,6 @@ const addCards = (items) => {
         $("#card-section").append(itemToAppend);
     });
 }
-
-function clickMe() {
-   
-}
-
-// function submitForm() {
-//     let formData = {};
-//     formData.first_name = $('#first_name').val();
-//     formData.last_name = $('#last_name').val();
-//     console.log(formData);
-// }
 
 function submitForm() {
     let formData = {};
